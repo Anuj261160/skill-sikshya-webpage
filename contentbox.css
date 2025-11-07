@@ -108,7 +108,8 @@
 }
 
 .first:hover{
- transform: scale(1.1);
+ transform: scale(1.05);
+ z-index: 1;
 }
 
 .second{
@@ -119,6 +120,7 @@
 
 .second:hover{
     transform: scale(1.1);
+    z-index: 1;
 }
 
 .third{
@@ -129,6 +131,7 @@
 
 .third:hover{
     transform: scale(1.1);
+    z-index: 1;
 }
 
 .fourth{
