@@ -1,0 +1,185 @@
+/* .........................................picture-box.............................................................. */
+
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding:140px;
+    border: 1px solid black;
+
+
+}
+/* .......................................................main-content-box...................................................... */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+    border: 1px solid black;
+
+}
+
+
+/* ...........................................................heading-and-P............................................................. */
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    border: 1px solid black;
+
+}
+.hero-text >h1{
+    font-weight: 600;
+    font-size: 4rem;
+    color: var(--base-black);
+}
+
+.green-heading{
+    color:var(--base-green);
+    
+}
+
+.courage{
+    display: none;
+    color: var(--base-green);
+    animation: swap 4s linear infinite;
+    
+}
+
+@keyframes swap{
+    from{
+        display: none;
+        transform: translate(0px);
+    }
+
+    to{
+        display: inline-block;
+        transform:translate(-220px) ;
+    }
+}
+
+.hero-text>p{
+    font-size: 28px;
+    text-align: center;
+}
+
+/* ............................................................images-WITH-p-section............................................................... */
+.hero-foot-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+  
+
+}
+.hero-foot-content >p{
+    font-weight: 400;
+    
+}
+
+
+/* .................................................IMAGE-BOX............................................................ */
+
+.mentors{
+    display: flex;
+   padding-left: 65px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mentors >img{
+   border-radius: 50%;
+   height: 72px;
+   width: 72px;
+   border: 1px solid black;
+   border: 3px solid var(--base-white);
+
+
+}
+/* ....................................................IMAGES................................................. */
+
+.first{
+    transition: transform 0.5s ease-out;
+   
+}
+
+.first:hover{
+ transform: scale(1.1);
+}
+
+.second{
+    position: relative;
+    right: 13px;
+    transition: transform 0.5s ease-out;
+}
+
+.second:hover{
+    transform: scale(1.1);
+}
+
+.third{
+    position: relative;
+    right: 26px;
+    transition: transform 0.5s ease-out;
+}
+
+.third:hover{
+    transform: scale(1.1);
+}
+
+.fourth{
+    position: relative;
+    right: 39px;
+    transition: transform 0.5s ease-out;
+}
+
+.fourth:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.fifth{
+    position: relative;
+    right: 52px;
+    transition: transform 0.5s ease-out;
+    
+}
+
+.fifth:hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.say{
+    color: #157254;
+    font-weight: 400;
+    
+}
+
+
+/* ..............................................................CIRCLE-WITH-NUMBER............................................................. */
+#plus{
+    color: var(--base-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    right: 65px;
+    background-color: var(--base-white);
+    transition: transform 0.5s ease-out;
+    
+}
+
+#plus:hover{
+    transform: scale(1.1);
+}
