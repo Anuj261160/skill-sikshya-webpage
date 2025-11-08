@@ -1,8 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    
-
+/* border: 1px solid black; */
+box-sizing: border-box;
+font-family: outfit;
 }
 
 :root {
@@ -14,7 +15,7 @@
 #main {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: auto;
     background-color: #D9EDE6;
     overflow: hidden;
 
@@ -22,9 +23,15 @@
 
 #nav-menu {
     padding: 24px 112px;
-    height: 80px;
-   
-    top: 0px;
+      background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: black;
+
+   background-color: #EEF5F3;
+  display: flex;
+  
+    
 }
 
 /* ........................................................LOGO and NAV Menu................................... */
@@ -32,10 +39,18 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
 }
 
-
-
+.menu-button-box{
+    display: flex;
+    gap: 48px;
+}
+.nav-content img{
+    height: 40px;
+    width: 210px;
+}
 .nav-content img:hover{
     cursor: pointer;
 }
@@ -44,9 +59,11 @@
 .menu {
     display: flex;
     align-items: center;
-    gap: 48px;
+    gap: 32px;
+    font-family: outfit;
 
 }
+
 
 /*...........................................................nav texts...............................................*/
 .menu>a {
@@ -62,16 +79,16 @@
 
 
 /*...........................................................BUTTON....................................................*/
-.menu>button {
+.menu-button-box>button {
     background: linear-gradient(180deg, #1DAA7E 0%, #1A8463 100%);
     width: 194px;
     height: 47px;
-    border-radius: 8px;
+    border-radius: 12px;
     color: var(--base-white);
+    font-family: outift;
+    font-size: 18px;
 }
 
-.menu>button:hover{
+.menu-button-box>button:hover{
     cursor: pointer;
-
 }
-

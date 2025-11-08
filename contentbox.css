@@ -7,7 +7,7 @@
     justify-content: center;
     
     padding:140px;
-    border: 1px solid black;
+    
 
 
 }
@@ -17,7 +17,8 @@
     flex-direction: column;
     align-items: center;
     gap: 64px;
-    border: 1px solid black;
+    
+    position: relative;
 
 }
 
@@ -28,42 +29,71 @@
     flex-direction: column;
     gap: 21px;
     align-items: center;
-    border: 1px solid black;
+    position: relative;
+    
 
 }
 .hero-text >h1{
+    font-family: outfit;
     font-weight: 600;
     font-size: 4rem;
     color: var(--base-black);
 }
-
+/* ....................................................................heading-and-its-animation..................................................... */
 .green-heading{
     color:var(--base-green);
     
 }
 
+#amb{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+     animation: swap-amb 4s ease-in-out 1s infinite alternate ;
+}
+
+#cour{
+    position: absolute;
+    opacity: 0;
+    top: -82.4px;
+    right: 15px;
+    animation: swap-courage 4s ease-in-out 1s infinite alternate;
+}
+/* .passion{
+    position: absolute;
+    opacity: 0;
+    top: 82.4px;
+    right: 30px;
+    animation: swap-passion 2s ease-in-out 2s infinite alternate;
+} */
 .courage{
-    display: none;
-    color: var(--base-green);
-    animation: swap 4s linear infinite;
     
+    color: var(--base-green);   
 }
 
-@keyframes swap{
-    from{
-        display: none;
-        transform: translate(0px);
+@keyframes swap-amb{
+    to{transform: translatey(-82.4px);}
+    0%{opacity: 1;}
+    40%{opacity:0;}
+    80%{opacity:0;}
+    100%{opacity: 0;}
+
+
     }
 
-    to{
-        display: inline-block;
-        transform:translate(-220px) ;
+@keyframes swap-courage{
+    to{transform: translatey(82.4px);}
+    to{opacity: 1;}
     }
+
+@keyframes swap-passion{
+    to{opacity: 1;}
+    to{transform: translateY(-82.4px);}
 }
-
 .hero-text>p{
     font-size: 28px;
     text-align: center;
+    font-family: outfit;
 }
 
 /* ............................................................images-WITH-p-section............................................................... */
@@ -71,12 +101,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid black;
+    
   
 
 }
 .hero-foot-content >p{
     font-weight: 400;
+    font-family: outfit;
     
 }
 
@@ -95,7 +126,7 @@
    border-radius: 50%;
    height: 72px;
    width: 72px;
-   border: 1px solid black;
+   
    border: 3px solid var(--base-white);
 
 
