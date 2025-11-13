@@ -55,8 +55,9 @@ gap: 32px;
 
     .grid-container{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: auto;
     }
+
 }
     
 
@@ -72,6 +73,13 @@ gap: 32px;
     flex-grow: 1;
     padding: 58px 35px 58px 206px;
 }
+@media(max-width:900px){
+  .clarity{
+    grid-column: 1/2;
+    grid-row: auto;
+  }
+}
+
 
 .boy-heading >p:first-child{
     font-size: 2.125rem;
@@ -120,7 +128,7 @@ gap: 32px;
 /* .............................................writing-boy..................... */
 
 .doing{
-    /* grid-row: 1/2; */
+    grid-row: 1/2;
     grid-column: 2/3;
     display: flex;
     justify-content: center;
@@ -129,6 +137,13 @@ gap: 32px;
     background-color: #5492A0;
     padding: 58px 206px 58px 35px;
     position: relative;
+}
+
+@media(max-width:900px){
+    .doing{
+        grid-column: 1/2;
+        grid-row:auto
+    }
 }
 
 .doing-heading{
@@ -183,6 +198,13 @@ gap: 32px;
     
     padding: 58px 35px 58px 206px;
 }
+@media(max-width:900px){
+    .mentor{
+        grid-column: 1/2;
+        grid-row:auto;
+    }
+}
+
 
 .girl-heading >p:first-child{
     font-size: 2.125rem;
@@ -237,6 +259,13 @@ gap: 32px;
     align-items: center;
     border-radius: 30px;
     background-color:#A88964;
+}
+
+@media(max-width:900px){
+    .achieve{
+        grid-row: auto;
+    grid-column: 1/2;
+    }
 }
 
 .achieve-heading{
