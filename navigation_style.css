@@ -17,17 +17,14 @@
     flex-direction: column;
     width: 100vw;
     height: auto;
-    background-color: #D9EDE6;
+    background-image: url(pictures/BACKGROUND.png);
+    background-size: cover;
     overflow: hidden;
 
 }
 
 #nav-menu {
     padding: 24px 112px;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background-color: #EEF5F3;
     display: flex;
 }
 
