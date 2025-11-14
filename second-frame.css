@@ -62,5 +62,10 @@ left: -25vw;
     border-radius: 20px;
     width: 279px;
 height: 364px;
-flex-shrink: 1;
+
 }
+
+.photo-frame>.photos:nth-child(3)>img{
+    border-radius: 20px;
+}
+
